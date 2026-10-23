@@ -14,7 +14,7 @@ import remarkEmbedder from "@remark-embedder/core";
 
 export const getPostMeta = async (): Promise<TagsType[] | undefined> => {
   const res = await fetch(
-    "https://api.github.com/repos/rizkyverandi/blogposts/git/trees/main?recursive=1",
+    "https://api.github.com/repos/notbapao/blogposts/git/trees/main?recursive=1",
     {
       headers: HTTP_GITHUB_HEADERS,
     }
@@ -68,7 +68,7 @@ export const getPostByName = async (
   fileName: string
 ): Promise<MetaTags | undefined> => {
   const res = await fetch(
-    `https://raw.githubusercontent.com/rizkyverandi/blogposts/main/${fileName}`,
+    `https://raw.githubusercontent.com/notbapao/blogposts/main/${fileName}`,
     {
       headers: HTTP_GITHUB_HEADERS,
     }

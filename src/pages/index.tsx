@@ -3,23 +3,14 @@ import Container from "@/components/Container";
 import { Card } from "@/components/Card";
 import Paragraph from "@/components/Paragraph";
 import BlinkingText from "@/components/BlinkingText";
-import List from "@/components/List";
 import OnViewAnimation from "@/components/OnViewAnimation";
 import Logger from "@/utils/utils";
 import { loadProjects } from "@/libs";
 import { ProjectType } from "@/types/project";
 import { Avatar } from "@/assets";
 import Image from "next/image";
-import { getPostMeta } from "@/libs/getPosts";
-import { TagsType } from "@/types/tags";
 
-export default function Home({
-  project,
-  posts,
-}: {
-  project: ProjectType[];
-  posts: TagsType[];
-}) {
+export default function Home({ project }: { project: ProjectType[] }) {
   Logger.logComponent("Home");
   return (
     <>
@@ -40,48 +31,18 @@ export default function Home({
                 {`>_`}Hello World! <BlinkingText text="." />
               </h1>
               <Paragraph>
-                I&apos;m a passionate web developer with a love for crafting
-                elegant, responsive websites that deliver exceptional user
-                experiences. But there&apos;s another rhythm in my life—music
-                production. Just as I code to create seamless digital
-                experiences, I produce music to create immersive soundscapes.
-                Let&apos;s create something amazing together—whether it&apos;s
-                in the world of code or the world of sound.
+                I&apos;m Rizky Verandi, a Backend Engineer with four years of
+                experience building secure, high-performance applications. I
+                specialize in Node.js and TypeScript, with a focus on Clean
+                Architecture, CQRS, and event-driven microservices. From
+                enterprise fleet management and logistics systems to business
+                websites, I enjoy turning complex requirements into reliable
+                software. Let&apos;s build something great together.
               </Paragraph>
             </div>
           </div>
         </Container>
       </SectionWrapper>
-      {posts && (
-        <SectionWrapper>
-          <Container className="py-20 text-cta-text">
-            <div className="flex flex-col gap-y-5">
-              <OnViewAnimation headerText="Articles" redirectURL="/blog">
-                {posts.length > 0 &&
-                  posts
-                    .slice(0, 5) // limit array if more than 5
-                    .map((val: TagsType, index: number) => {
-                      return (
-                        <>
-                          <List
-                            title={val.title}
-                            date={val.date}
-                            url={`/blog/${val.id}`}
-                            key={index}
-                          />
-                        </>
-                      );
-                    })}
-                {posts.length === 0 && (
-                  <div className="text-center">
-                    <Paragraph>No posts yet!</Paragraph>
-                  </div>
-                )}
-              </OnViewAnimation>
-            </div>
-          </Container>
-        </SectionWrapper>
-      )}
       <SectionWrapper>
         <Container className="py-20 text-cta-text">
           <div className="flex flex-col gap-y-5">
@@ -103,6 +64,5 @@ export default function Home({
 
 export async function getStaticProps() {
   const project = await loadProjects();
-  const posts = await getPostMeta();
-  return { props: { project, posts } };
+  return { props: { project } };
 }

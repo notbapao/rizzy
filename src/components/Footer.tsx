@@ -23,13 +23,13 @@ const Footer = ({ className }: { className?: string }) => {
             </li>
             <li>
               <Link
-                href={"https://github.com/rizkyverandi"}
+                href={"https://github.com/notbapao"}
                 target="_blank"
-                aria-label="Go to About page"
+                aria-label="Visit notbapao on GitHub"
                 prefetch={false}
               >
                 <span className="flex gap-2 items-center ">
-                  <FaGithubAlt /> Github
+                  <FaGithubAlt /> GitHub
                 </span>
               </Link>
             </li>

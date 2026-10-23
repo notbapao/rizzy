@@ -1,11 +1,53 @@
 {
   "payload": [
     {
+      "id": "marketemas.id",
+      "title": "marketemas.id",
+      "desc": "Business website for a gold buying and selling company. Completed.",
+      "url": "",
+      "demoUrl": "https://marketemas.id"
+    },
+    {
+      "id": "suprtee.com",
+      "title": "suprtee.com",
+      "desc": "Website for a custom apparel and print-on-demand brand. Completed.",
+      "url": "",
+      "demoUrl": "https://suprtee.com"
+    },
+    {
+      "id": "multimedinagroup.id",
+      "title": "multimedinagroup.id",
+      "desc": "Corporate website for a company in the textile industry. Completed.",
+      "url": "",
+      "demoUrl": "https://multimedinagroup.id"
+    },
+    {
+      "id": "charcoal-nesia.com",
+      "title": "charcoal-nesia.com",
+      "desc": "Corporate website for a BBQ and shisha charcoal exporter. Completed.",
+      "url": "",
+      "demoUrl": "https://charcoal-nesia.com"
+    },
+    {
+      "id": "bataraindo.com",
+      "title": "bataraindo.com",
+      "desc": "Corporate website for a BBQ and shisha charcoal exporter. In development.",
+      "url": "",
+      "demoUrl": "https://bataraindo.com"
+    },
+    {
+      "id": "furniqinteria.com",
+      "title": "furniqinteria.com",
+      "desc": "Business website for a furniture and interior design provider. Completed.",
+      "url": "",
+      "demoUrl": "https://furniqinteria.com"
+    },
+    {
       "id": "c8c9828f-b79f-4400-bfdb-95b40d617e74",
       "title": "Rizzy",
       "desc": "The source of this website.",
       "year": "2024",
-      "url": "https://github.com/rizkyverandi/portfolio-2024",
+      "url": "https://github.com/notbapao/portfolio-2024",
       "demoUrl": "",
       "articleUrl": ""
     },
@@ -14,7 +56,7 @@
       "title": "Pokemon",
       "desc": "Manage pokemon list state using RxJS.",
       "year": "2024",
-      "url": "https://github.com/rizkyverandi/pokemon-2024",
+      "url": "https://github.com/notbapao/pokemon-2024",
       "demoUrl": "https://pokemon-2024.vercel.app/",
       "articleUrl": ""
     },
@@ -23,7 +65,7 @@
       "title": "Travelingo",
       "desc": "Front-end Travel agency website.",
       "year": "2022",
-      "url": "https://github.com/rizkyverandi/travelingo",
+      "url": "https://github.com/notbapao/travelingo",
       "demoUrl": "",
       "articleUrl": ""
     },
@@ -32,7 +74,7 @@
       "title": "Cats Library",
       "desc": "Redux Toolkit and Redux-Saga for state management.",
       "year": "2024",
-      "url": "https://github.com/rizkyverandi/cats-library",
+      "url": "https://github.com/notbapao/cats-library",
       "demoUrl": "https://cats-library.vercel.app/",
       "articleUrl": ""
     },
@@ -41,7 +83,7 @@
       "title": "MERN",
       "desc": "MongoDB, Express, React, NodeJS.",
       "year": "2022",
-      "url": "https://github.com/rizkyverandi/portfolio",
+      "url": "https://github.com/notbapao/portfolio",
       "demoUrl": "",
       "articleUrl": ""
     },
@@ -50,7 +92,7 @@
       "title": "Express API",
       "desc": "Express, NodeJS, Clean Architecture, CQRS, Inversify, Jest",
       "year": "2025",
-      "url": "https://github.com/rizkyverandi/api-crud-express-techtest",
+      "url": "https://github.com/notbapao/api-crud-express-techtest",
       "demoUrl": "",
       "articleUrl": ""
     },
@@ -59,7 +101,7 @@
       "title": "RabbitMQ SMTP Email",
       "desc": "RabbitMQ, NodeJS, Nodemailer",
       "year": "2025",
-      "url": "https://github.com/rizkyverandi/rabbitmq-techtest",
+      "url": "https://github.com/notbapao/rabbitmq-techtest",
       "demoUrl": "",
       "articleUrl": ""
     }

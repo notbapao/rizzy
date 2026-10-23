@@ -14,7 +14,7 @@ export default function App({ Component, pageProps }: AppProps) {
         {...{
           title: "Rizzy Personal Website",
           description:
-            "Welcome to Rizzy's personal website. Explore my journey, projects, and insights in software development and music production. Discover what drives my passion for programming and music creation, and get to know the person behind the name.",
+            "Rizky Verandi is a Backend Engineer specializing in Node.js, TypeScript, Clean Architecture, CQRS, and event-driven microservices. Explore his skills and projects.",
           imageUrl: Avatar.src,
           slug: "/",
           keywords: ["personal", "website", "portfolio", "skills"],

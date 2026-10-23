@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { MdOutlineDarkMode } from "react-icons/md";
 import Image from "next/image";
-import { Avatar, Avatar2 } from "@/assets";
+import { Avatar } from "@/assets";
 import { useTheme } from "@/contexts";
 import Utils from "@/utils/utils";
 
@@ -46,16 +46,6 @@ const Navbar = ({ className }: { className?: string }) => {
                 prefetch={false}
               >
                 Projects
-              </Link>
-            </li>
-            <li className="px-2">
-              <Link
-                className="hover-fx"
-                href="/blog"
-                aria-label="Go to Articles page"
-                prefetch={false}
-              >
-                Blogs
               </Link>
             </li>
             <li onClick={toggleTheme}>

@@ -72,7 +72,7 @@ const CustomHead = (props: HeadProps) => {
       )}
       <meta
         property="og:url"
-        content={`${DOMAIN}/blog/${props.slug}/`}
+        content={props.canonicalUrl || `${DOMAIN}/${props.slug || ""}`}
         key="og-url"
       />
       {props.type && (

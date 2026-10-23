@@ -22,7 +22,7 @@ const MemoCard = ({
   return (
     <figure className="border border-gray-500 rounded-3xl bg-card p-6 flex flex-col gap-2 justify-between">
       <div>
-        <time className="text-xs">{props.year}</time>
+        {props.year && <time className="text-xs">{props.year}</time>}
         <HeaderTag className="text-base">{props.title}</HeaderTag>
         <figcaption className="text-copy-secondary text-sm">
           {props.desc}
