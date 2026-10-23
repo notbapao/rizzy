@@ -45,8 +45,8 @@ const About = () => {
               design, and event-driven microservices.
             </Paragraph>
             <Paragraph>
-              I currently work at Indocyber Global, placed at Astra SERA on
-              AstraFMS 2.0, building backend services for an enterprise Fleet
+              I previously worked at Astra SERA on AstraFMS 2.0, building
+              backend services for an enterprise Fleet
               Management System. Previously, I developed enterprise logistics
               applications at PT Boon Software and C# / ASP.NET MVC services at
               PT Bintang Toedjoe Indonesia. I also build business websites for
