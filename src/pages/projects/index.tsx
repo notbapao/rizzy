@@ -47,9 +47,11 @@ const index = ({ project }: { project: ProjectType[] }) => {
 
             <OnViewAnimation>
               <div className="grid grid-flow-row md:grid-cols-3 grid-row-1 gap-6">
-                {project.map((val: Partial<ProjectType>) => {
-                  return <Card key={val.id} props={val} headerTag="h2" />;
-                })}
+                {project
+                  .sort((a, b) => Number(b.year) - Number(a.year))
+                  .map((val: Partial<ProjectType>) => {
+                    return <Card key={val.id} props={val} headerTag="h2" />;
+                  })}
               </div>
             </OnViewAnimation>
           </div>
